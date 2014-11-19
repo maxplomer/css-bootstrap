@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NewAuthDemo</title>
+    <%= stylesheet_link_tag 'application' %>
+    <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body data-spy="scroll" data-target=".navbar-example">
+
+    <div class="sidebar">
+      <ul class="nav nav-pills">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/about">About</a></li>
+
+        <% if !signed_in? %>
+           <li><%= link_to "Sign In", new_session_url %></li>
+        <% end %>
+        <% if signed_in? %>
+//////////
+        <li></li>
+
+
+
+
+
+
+
+
+
+//////////
+        <% end %>
+      </ul>
+    </div>
+
+    <div class="navbar-example">
+      <ul class="nav navbar-default navbar-nav" data-spy="affix">
+        <li><a href="#header1">Heady 1</a></li>
+        <li><a href="#header2">Heady 2</a></li>
+        <li><a href="#header3">Heady 3</a></li>
+      </ul>
+
+    </div>
+
+    <% if signed_in? %>
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+        Dropdown
+        <span class="caret"></span>
+      </button>
+
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <li role="presentation">
+        <li><%= button_to "Sign Out", session_url, :method => :delete %></li>
+      </ul>
+    </div>
+
+    <% else %>
+    <p>
+      <%= link_to "Sign In", new_session_url %> or
+      <%= link_to "Sign up", new_user_url %>
+    </p>
+
+    <% end %>
+
+
+    <hr>
+
+    <% if flash[:errors] %>
+    <h3>Please fix the following errors:</h3>
+    <ul>
+      <% flash[:errors].each do |error| %>
+      <li><%= error %></li>
+      <% end %>
+    </ul>
+    <% end %>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>

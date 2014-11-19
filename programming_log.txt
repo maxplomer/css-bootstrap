@@ -1,0 +1,54 @@
+things to fix:
+
+use parent instead of $(".form-group-name")
+
+change if else statement that have if (!    )
+
+placeholder="user@aol.org"
+
+
+
+
+
+helpful links:
+
+http://getbootstrap.com/components/
+
+http://stackoverflow.com/questions/4479233/static-pages-in-ruby-on-rails
+
+http://stackoverflow.com/questions/1854556/check-if-inputs-are-empty-using-jquery
+
+http://stackoverflow.com/questions/1457713/jquery-javascript-alert-if-all-fields-are-not-completed
+
+
+http://stackoverflow.com/questions/15247104/jquery-validation-plugin-adding-a-success-class-to-another-element
+
+http://api.jquery.com/blur/
+
+google: click handler (using jQuery
+
+
+
+http://getbootstrap.com/css/#forms
+
+
+google: jquery success validation class
+
+
+http://stackoverflow.com/questions/15247104/jquery-validation-plugin-adding-a-success-class-to-another-element
+
+http://api.jquery.com/parent/
+
+http://stackoverflow.com/questions/1854556/check-if-inputs-are-empty-using-jquery
+
+http://api.jquery.com/event.preventdefault/
+
+google: disable button jquery
+
+http://stackoverflow.com/questions/10591422/bootstrap-carousel-image-doesnt-align-properly
+
+
+http://stackoverflow.com/questions/18559682/twitter-bootstrap-carousel-grey-bars
+
+
+http://www.w3schools.com/css/css_padding.asp
